@@ -4,88 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Maxim, cv, resume" />
-    <meta name="description" content="Resume Maxim Pismenniy" />
-    <title>HTML Course</title>
+    <meta name="keywords" content="Maksym, cv, resume" />
+    <meta name="description" content="Resume Maksym Pismenniy" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Maksym Pismennyi</title>
   </head>
   <body>
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/1024px-Google_Translate_logo.svg.png"
-      width="200px"
-    />
-    <h1>Maksym Pismenniy</h1>
-    <p>
-      I am Maksym Pismenniy.I teaching a course HTML & CSS in online school
-      <strong>Result School</strong>
-    </p>
-    <hr />
-    <h2>Social networks</h2>
-    <p>
-      <a href="http://instagram.com" target="_blank">Instagram</a>
-      <br />
-      <a href="http://www.facebook.com" target="_blank">Facebook</a>
-      <br />
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
-    </p>
-    <hr />
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Games</li>
-      <li>Programming</li>
-      <li>Auto</li>
-    </ol>
-    <hr />
-    <h1>My Works</h1>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Job</th>
-          <th>Title</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ukrainian State Chemical-Technological University</td>
-          <td>Student</td>
-          <td>2012</td>
-        </tr>
-        <tr>
-          <td>Dnipro-contact</td>
-          <td>Technologist</td>
-          <td>2016</td>
-        </tr>
-        <tr>
-          <td>Grand Lubicz Uzdrowisko Ustka</td>
-          <td>Waiter</td>
-          <td>2020</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h2>Contact with me</h2>
-    <form action="#">
+    <div class="container">
+      <div class="info">
+        <img class="avatar"src="1_foto.jpeg"/>
+          <div class="info-text">
+            <h1>Maksym Pismennyi</h1>
+              <p>I am Maksym Pismenniy.I teaching a course HTML & CSS in online school <strong>Result School.</strong></p>
+                <h2 >Social networks</h2>
+                  <a  href="http://instagram.com" target="_blank"><img src="instagram.svg" alt="">Instagram</a>
+                  <a  href="http://www.facebook.com" target="_blank"><img src="facebook.svg" alt="">Facebook</a>
+                  <a  href="https://twitter.com/" target="_blank"><img src="twitter.svg" alt="">Twitter</a>
+          </div>
+    </div>
+    <div class="card hobbies">
+      <h2>My hobbies</h2>
+      <ol class="list" >
+        <li>Games</li>
+        <li>Programming</li>
+        <li>Auto</li>
+      </ol>
+    </div>
+    <div class="card works">
+      <h2>My Works</h2>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Job</th>
+            <th>Title</th>
+            <th>Year</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>Ukrainian State Chemical-Technological University</td>
+            <td>Student</td>
+            <td>2012</td>
+          </tr>
+          <tr>
+            <td>Dnipro-contact</td>
+            <td>Technologist</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Grand Lubicz Uzdrowisko Ustka</td>
+            <td>Waiter</td>
+            <td>2020</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card courses">
+      <h2>My courses</h2>
+      <ul class="link-list" >
+        <li><a target="_blank" href="https://lk.result.school/">HTML & CSS is the first step to become an IT developer</a></li>
+      </ul>
+    </div>
+    <div class="card contact">
+      <form action="#" class="form" >
+        <h2>Contact with me</h2>
+        <div class="form-row">
+          <div class="form-group" >
+            <label for="name">You name:</label>
+            <input type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">You email:</label>
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mesenge">You mesenge:</label>
+          <textarea
+            name=""
+            id="mesenge"
+            cols="30"
+            rows="10"
+            placeholder="You mesenge..."
+          ></textarea>
+        </div>
+    </div>
       <div>
-        <label for="name">You name:</label>
-        <input type="text" id="name" placeholder="Name" />
-      </div>
-      <div>
-        <label for="email">You email:</label>
-        <input type="email" id="email" placeholder="Email" />
-      </div>
-      <div>
-        <label for="mesenge">You mesenge:</label>
-        <textarea
-          name=""
-          id="mesenge"
-          cols="30"
-          rows="10"
-          placeholder="You mesenge..."
-        ></textarea>
-      </div>
-      <div>
-        <button>Send</button>
+        <button class="btn" >Send</button>
       </div>
     </form>
+    </div>
+    
   </body>
 </html>

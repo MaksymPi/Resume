@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Roboto&display=swap");
+body {
+  font-family: Roboto;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.container {
+  margin: auto;
+  max-width: 800px;
+  padding-top: 20px;
+}
+@media (max-width: 650px) {
+  .container {
+  }
+}
+h1,
+h2 {
+  color: #1e90ff;
+  padding: 15px 0 0 15px;
+}
+.info {
+  margin-bottom: 10px;
+  display: flex;
+}
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+.info-text {
+  margin-left: 40px;
+}
+.info-text p {
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+}
+
+.avatar {
+  box-shadow: 4px 4px 14px #b6d2fb;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  opacity: 0.7;
+}
+a:active {
+  color: #1e90ff;
+}
+/* a:visited {
+  color: aqua;
+} */
+.card {
+  background-color: #fafafa;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-left: 7px solid #1e90ff;
+  box-shadow: 4px 4px 14px #b6d2fb;
+}
+.hobbies {
+}
+.works {
+}
+.table {
+  width: 100%;
+}
+.table td {
+  padding-bottom: 10px;
+}
+.table td:nth-child(3) {
+  font-weight: bold;
+}
+.contact {
+}
+.btn {
+  background: transparent;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: 2px solid #1e90ff;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  background: #1e90ff;
+  color: #f5fffa;
+}
+.list {
+  padding: 0 20px;
+}
+.list li {
+  margin-bottom: 15px;
+}
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+.form-row {
+  display: flex;
+}
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+}
+@media (max-width: 650px) {
+  .form-row {
+    display: block;
+  }
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.form-group label {
+  display: block;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  color: #000;
+  background: #eff2f7;
+}
